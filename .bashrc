@@ -115,6 +115,7 @@ fi
 
 #alias emacs='emacs -nw'
 alias emacs='leafpad'
+alias binScripts='cd ~/docs/bin_scripts/'
 
 PS1="[\u \T \w] $ " 
 PATH=$PATH":/home/matthew/docs/bin_scripts"
