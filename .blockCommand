@@ -1,0 +1,15 @@
+#!/bin/bash
+COMMAND1=`tail -1 ~/.bash_history`
+COMMAND=`echo ${COMMAND1}`
+BLOCKED_COMMANDS=("firefox -safe-mode" "sudo apt-get install chromium-browser" 
+"sudo chattr -i .blockCommand" "sudo apt-get install lubuntu-software-center" "sudo chattr -i .*" "sudo chattr -i *" "sudo chattr -i" "chattr -i" "wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb" "sudo apt-get install emacs" "sudo apt-get install vim" "sudo apt-get install nano" "rm -r .mozilla" "rm -f .mozilla" "rm -rf .mozilla" "rm -r .mozilla/" "rm -f .mozilla/" "rm -rf .mozilla/" "mozilla")
+KILL_XTERM=`ps -ejH | grep xterm | awk '{print $2}' | head -1`
+for (( i=0; i<"${#BLOCKED_COMMANDS[@]}"; i++ ));
+do
+    if [[ "${COMMAND}" == *"${BLOCKED_COMMANDS[${i}]}"* ]];
+    then
+	echo "Sorry this command is blocked."
+	read -p "Your shell will close when you hit enter."
+	kill -- -"${KILL_XTERM}"
+    fi
+done

@@ -1,0 +1,10 @@
+!File: .Xresources
+!Used to customize properities of xterm
+
+xterm*vt100*geometry: 213x42+50+30
+xterm*background: black
+xterm*foreground: white
+xterm*title: xterm
+!xterm*scrollBar: true
+xterm*cursorColor: yellow
+xterm*cursorBlink: true
