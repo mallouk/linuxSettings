@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Basic Git Commands"
+echo "git init"
+echo "git add <some files>"
+echo "git status"
+echo "git commit -m \"Message\""
+echo ""
+echo "git config --global user.name \"Matthew Jallouk\""
+echo "git config --global user.email \"jalloukmat@yahoo.com\""
+echo ""
+echo "git status"
+echo "git push"
+echo "<enter username/password>"
