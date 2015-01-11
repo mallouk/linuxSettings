@@ -10,6 +10,7 @@
     )
   )
 )
+
 ;;(setq eshell-highlight-prompt nil)
 
 
@@ -151,19 +152,19 @@
 (global-set-key "\C-ct" 'text-mode)
 (global-set-key "\C-cm" 'c++-mode)
 (global-set-key "\C-cr" 'toggle-read-only)
-(global-set-key "\C-cz" 'zip-directory)
-(global-set-key "\C-cu" 'unzip-directory)
 (global-set-key "\C-cd" 'gdb)
 (global-set-key [?\C-.] 'tags-search)
 (global-set-key "\C-co" 'gtags-mode)
 (global-set-key "\C-cx" 'next-multiframe-window)
 (global-set-key "\C-ce" 'eshell)
 (global-set-key "\C-cr" 'query-replace)
-(global-set-key "\C-xl" 'latex-pdf)
 (global-set-key "\C-xt" 'taglist)
 (global-set-key "\C-cs" 'next-buffer)
 (global-set-key "\C-ca" 'previous-buffer)
 (global-set-key "\C-ct" 'untar)
+(global-set-key "\C-cc" 'copy-region-as-kill)
+(global-set-key "\C-xx" 'kill-region)
+(global-set-key "\C-cv" 'clipboard-yank)
 
 (setq fill-column 75)
 
@@ -209,7 +210,7 @@
          (menu-bar-mode -1)
          (custom-set-faces
           ;; custom-set-faces was added by Custom -- don't edit or cut/paste it!
-          ;; Your init file should contain only one such instance.
+          ;; Your init file should contain only one such instance.y
           '(comint-highlight-input ((t (:foreground "red"))))
 ;         '(font-lock-function-name-face ((((type tty) (class color)) (:foreground "blue"))))
 ;         '(font-lock-keyword-face ((((type tty) (class color)) (:foreground "cyan"))))
@@ -276,5 +277,13 @@
     (erase-buffer))
 )
 
-
-
+; require the mouse and merge the mouse settings with xterm settings
+; enable mouse scrolling and tell to scroll one line at a time.
+(require 'mouse)
+(xterm-mouse-mode t)
+(mouse-wheel-mode t) 
+    
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time    
+(setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
+(setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
+(setq scroll-step 1) ;; keyboard scroll one line at a time

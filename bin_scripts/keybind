@@ -14,4 +14,8 @@ echo -e "\e[1;34m Ctrl-C-L     goto-line\e[0m"
 echo -e "\e[1;31m Ctrl-C-W     what-line\e[0m"
 echo -e "\e[1;34m Ctrl-C-S     next-buffer\e[0m"
 echo -e "\e[1;31m Ctrl-C-A     previous-buffer\e[0m"
+echo -e "\e[1;34m Ctrl-X-X     kill-region (cut)\e[0m"
+echo -e "\e[1;31m Ctrl-C-C     copy-region-as-kill (copy)\e[0m"
+echo -e "\e[1;34m Ctrl-C-V     clipboard-yank (paste)\e[0m"
+
 echo " "
