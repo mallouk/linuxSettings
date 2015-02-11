@@ -1,0 +1,28 @@
+#!/bin/bash
+FILENAME=$1
+SEARCH_STRING=$2
+DIR=$3
+
+#If we dont have enough parameters, throw an error.
+if [[ ${FILENAME} == "" ||  ${SEARCH_STRING} == "" ]]
+then
+    echo "You must give a filename and search string parameter."
+    echo ""
+    exit
+fi
+
+
+
+#Parses multiple files choices and lists them to individually grep each one.
+IFS='
+' FILE=( `find ${FILENAME} ${DIR}` )
+
+LEN=`expr ${#FILE[@]}`
+
+for (( i=0; i<${LEN}; i++ ));
+do
+    grep ${SEARCH_STRING} ${FILE[${i}]}  -n -H --color=always
+done
+
+
+
