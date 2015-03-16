@@ -114,7 +114,7 @@ if ! shopt -oq posix; then
 fi
 
 #alias emacs='emacs -nw'
-alias emacs='leafpad'
+alias emacs='emacs -nw'
 alias binScripts='cd ~/docs/bin_scripts/'
 
 PS1="[\u \T \w] $ " 
