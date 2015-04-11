@@ -1,4 +1,4 @@
 #!/bin/bash
 FILE=$1
 echo $FILE
-wget "https://dl.dropboxusercontent.com/u/64867718/${FILE}"
+sudo wget "https://dl.dropboxusercontent.com/u/64867718/${FILE}"
