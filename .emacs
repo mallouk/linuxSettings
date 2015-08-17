@@ -251,7 +251,7 @@
  '(delete-selection-mode nil nil (delsel))
  '(frame-background-mode (quote dark))
  '(scroll-bar-mode (quote right))
- '(shell-file-name "/bin/tcsh")
+;; '(shell-file-name "/bin/tcsh")
  '(transient-mark-mode t))
 
 
@@ -287,3 +287,12 @@
 (setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
 (setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
 (setq scroll-step 1) ;; keyboard scroll one line at a time
+
+(defun my-clear ()
+  (interactive)
+  (erase-buffer)
+  (comint-send-input)
+)
+
+(global-set-key "\C-l" 'my-clear)
+

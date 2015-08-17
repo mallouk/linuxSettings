@@ -1,0 +1,128 @@
+clear
+ls
+cd heatmap/
+ls
+cd ../..
+ls
+cd ..
+ls
+rm -rf heatmap/
+ls
+git clone https://github.com/mallouk/heatmap.git
+cd heatmap/
+ls
+cd heatmap/
+ls
+clear
+ls
+./heatmap 
+clear
+ls
+cd ..
+ls
+zip -r heatmap.zip heatmap/
+git add --all
+git statu
+git status
+git add heatmap.zip 
+clear
+ls
+git status
+git commit -m "Added zip file"
+git push
+clear
+ls
+mv heatmap.zip ~/
+cd
+ls
+./fileShare 
+mv heatmap.zip ./share_files/
+clear
+ls
+cd
+ls
+cd
+ls
+cd
+ls
+cd Downloads/
+ls
+cat instr 
+clear
+ls
+ls
+clear
+ls
+cd javascripts/
+ls
+clear
+ls
+cd ..
+ls
+clear
+ls
+cd stylesheets/
+ls
+cd ..
+ls
+clear
+ls
+faq.org
+clear
+ls
+ls *.org
+clear
+ls *.org
+ls *html
+ls *html
+ls *html
+clear
+ls
+ls *html
+clear
+ping 8.8.8.8
+clear
+cd
+clear
+ls
+exit
+ls
+clear
+ls
+clean
+ls
+ls
+cp mupen64plus.cfg mupen64plus1.cfg
+ls
+clear
+ls
+exit
+ls
+rm mupen64plus.cfg
+cp mupen64plus1.cfg mupen64plus.cfg
+ls
+clear
+ls
+cd
+ls
+cd /usr/local/share/
+ls
+cd
+ls
+cd /usr/share/mu
+cd .config/
+ls
+cd mupen64plus/
+ls
+clear
+lss
+ls
+rm mupen64plus.cfg
+cp mupen64plus1.cfg mupen64plus.cfg
+ls
+clear
+ls
+clear
+ls
+clean
+ls

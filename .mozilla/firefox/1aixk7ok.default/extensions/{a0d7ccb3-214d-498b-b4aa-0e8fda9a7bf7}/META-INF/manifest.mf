@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+
+Name: install.rdf
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: uMp82AseTz0VuLVCSQPIpg==
+SHA1-Digest: 4mkzbCS4ouwYmVVkFeZtwpzyE/U=
+
+Name: chrome.manifest
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: /oU++5KN8lEWQxOkUI075g==
+SHA1-Digest: ftB9EsNMWKkp1cd3YTMeZ8cXTA4=
+
+Name: chrome/wot.jar
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: +LK/HRpt8M4vrG3hMkF2TA==
+SHA1-Digest: URu6++yndgi8Y8ZybXz0FqXYqwo=
+
+Name: COPYING
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 0yI5vLZzRjq4dOgNR/rlBA==
+SHA1-Digest: hiS82uVbru8AzRHV38+mD2hxCgI=
+

@@ -113,12 +113,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#alias emacs='emacs -nw'
 alias emacs='emacs -nw'
 alias binScripts='cd ~/docs/bin_scripts/'
 
 PS1="[\u \T \w] $ " 
-PATH=$PATH":/home/matthew/docs/bin_scripts"
+PATH="/home/matthew/docs/bin_scripts:"$PATH
 
 history -c
 rm .bash_history
