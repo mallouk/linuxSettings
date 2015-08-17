@@ -1,0 +1,2 @@
+pluckui export | grep -i 
+pluckui add "Deny crushed-alive.com"
