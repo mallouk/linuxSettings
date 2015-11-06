@@ -1,5 +1,0 @@
-#!/bin/bash
-
-sudo apt-get install g++ freeglut3 freeglut3-dev libglew-dev libglew1.5 binutils-gold make
-
-./drop fractals.zip

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+FILE=$1
+EXTEN=$2
+
+echo $1
+
+if [[ "${FILE}" == "" || ${EXTEN} == "" ]]
+then
+    echo "Must have your file and extension parameter when running this script."
+    exit
+else
+    ffmpeg -i "${FILE}"."${EXTEN}" -acodec libmp3lame "${FILE}".mp3
+    exit
+fi
