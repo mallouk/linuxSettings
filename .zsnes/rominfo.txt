@@ -1,0 +1,7 @@
+This is the info for the last game you ran.
+
+File: Soul Blazer.sfc Header: No
+SOULBLAZER - 1 USA        TYPE:NORMAL   
+INTERLEAVED:No               CHKSUM:OK  
+VIDEO:NTSC    BANK:Lo     CRC32:31B965DB
+                                        

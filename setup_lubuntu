@@ -4,7 +4,7 @@ rm -fr Documents Music Pictures Public Templates Videos
 
 sudo apt-get update
 sudo apt-get remove chromium-browser lubuntu-software-center
-sudo apt-get install gcc g++ make emacs firefox vlc zsnes avidemux scummvm dosbox git dkms inkscape
+sudo apt-get install gcc g++ make emacs firefox vlc zsnes avidemux scummvm dosbox git dkms inkscape ffmpeg python-dev nginx
 #cp -r /media/matthew/VBoxLinuxAdditions.run
 #sudo ./VBoxLinuxAdditions.run
 
