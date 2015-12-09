@@ -15,8 +15,7 @@
 
 
 
-
-(add-to-list 'load-path "~/.emacs.d/")
+;(add-to-list 'load-path "~/.emacs.d/")
 
 ;(require 'dirtree)
 ;(require 'taglist)
