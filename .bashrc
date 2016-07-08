@@ -116,11 +116,6 @@ fi
 alias emacs='emacs -nw'
 alias binScripts='cd ~/docs/bin_scripts/'
 
-PS1="[\u \T \w] $ " 
+PS1="\e[1;36m[\u \T \w] $ \e[0;38m" 
 PATH="/home/matthew/docs/bin_scripts:"$PATH
-
-history -c
-rm .bash_history
-echo "clear"> .bash_history
-trap 'history -a && /home/matthew/.blockCommand' DEBUG
-
+echo -ne "\e]12;yellow\a" #Make cursor blink yellow
