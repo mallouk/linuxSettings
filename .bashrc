@@ -116,6 +116,8 @@ fi
 alias emacs='emacs -nw'
 alias binScripts='cd ~/docs/bin_scripts/'
 
-PS1="\e[1;36m[\u \T \w] $ \e[0;38m" 
+#PS1="\e[1;36m[\u \T \w] $ \e[0;38m" 
+#PS1="\e[1;36m[\u \T \w] $ \e[m "
+PS1="[\u \T \w] $ "
 PATH="/home/matthew/docs/bin_scripts:"$PATH
 echo -ne "\e]12;yellow\a" #Make cursor blink yellow
